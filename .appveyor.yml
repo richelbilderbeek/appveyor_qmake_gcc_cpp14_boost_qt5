@@ -11,8 +11,5 @@ build_script:
   - qmake
   - mingw32-make
   - cd release
-  - start /b appveyor_qmake_gcc_cpp14_boost_qt5.exe
-  - timeout 10
-  - taskkill /f /im appveyor_qmake_gcc_cpp14_boost_qt5.exe
-  # Show the created file
+  - appveyor_qmake_gcc_cpp14_boost_qt5.exe
   - type appveyor_qmake_gcc_cpp14_boost_qt5.txt
