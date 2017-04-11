@@ -25,11 +25,6 @@ my_dialog::my_dialog(QWidget *parent) :
   //Create a file to show the program is run
   {
     std::ofstream f("appveyor_qmake_gcc_cpp14_boost_qt5.txt");
-    // Code
-    //using boost::posix_time::ptime;
-    //using boost::posix_time::second_clock;
-    //using boost::posix_time::to_simple_string;
-    //using boost::gregorian::day_clock;
     f << boost::posix_time::to_simple_string(
       boost::posix_time::ptime(
         boost::gregorian::day_clock::universal_day(),
