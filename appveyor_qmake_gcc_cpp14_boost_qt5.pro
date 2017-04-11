@@ -17,6 +17,7 @@ QMAKE_CXXFLAGS += -Wall -Wextra -Werror
 win32 {
   INCLUDEPATH += C:\Libraries\boost_1_63_0
 }
+LIBS += -lboost_date_time
 
 # Qt5
 QT += core gui widgets

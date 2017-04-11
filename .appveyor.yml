@@ -14,3 +14,5 @@ build_script:
   - start /b appveyor_qmake_gcc_cpp14_boost_qt5.exe
   - timeout 10
   - taskkill /f /im appveyor_qmake_gcc_cpp14_boost_qt5.exe
+  # Show the created file
+  - type appveyor_qmake_gcc_cpp14_boost_qt5.txt
